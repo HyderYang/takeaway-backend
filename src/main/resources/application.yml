@@ -1,0 +1,8 @@
+#logging:
+#  level: info
+#  pattern:
+#    # 日期-输出内容
+#    console: "%d - %msg%n"
+#  file:
+#    path: /Users/hyder/Work_Beach/Java/takeaway/log
+#
