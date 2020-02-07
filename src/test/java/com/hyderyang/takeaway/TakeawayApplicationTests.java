@@ -1,6 +1,5 @@
 package com.hyderyang.takeaway;
 
-import com.hyderyang.takeaway.entity.po.SellerInfo;
 import com.hyderyang.takeaway.mapper.SellerInfoMapper;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
@@ -28,11 +27,4 @@ class TakeawayApplicationTests {
 		log.warn("warning");
 		log.info("name: {}, password: {}", name, password);
 	}
-
-	@Test
-	void testGetSellerInfo() {
-		SellerInfo sellerInfo = this.sellerInfoMapper.getSellerInfo("123123");
-		log.info(sellerInfo.toString());
-	}
-
 }
