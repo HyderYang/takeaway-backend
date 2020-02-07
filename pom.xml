@@ -16,6 +16,28 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<profile.swagger/>
+		<springfox.version>2.7.0</springfox.version>
+		<mysql.version>8.0.18</mysql.version>
+		<druid.version>1.1.21</druid.version>
+		<mybatisPlus.version>3.2.0</mybatisPlus.version>
+		<poi.version>4.1.1</poi.version>
+		<commons.fileupload.version>1.4</commons.fileupload.version>
+		<commons.io.version>2.6</commons.io.version>
+		<commons.codec.version>1.13</commons.codec.version>
+		<commons.configuration2.version>2.6</commons.configuration2.version>
+		<guava.version>28.1-jre</guava.version>
+		<jodatime.version>2.10.5</jodatime.version>
+		<p6spy.version>3.8.6</p6spy.version>
+		<fastjson.version>1.2.59</fastjson.version>
+		<commons.collections4.version>4.4</commons.collections4.version>
+		<slf4j.version>1.7.21</slf4j.version>
+		<log4j.version>2.7</log4j.version>
+		<hutool.version>5.1.0</hutool.version>
+		<mybatis.version>2.1.0</mybatis.version>
 	</properties>
 
 	<dependencies>
@@ -36,8 +58,31 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>${mybatis.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>p6spy</groupId>
 			<artifactId>p6spy</artifactId>
+			<version>${p6spy.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>${hutool.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>${commons.collections4.version}</version>
 		</dependency>
 
 		<dependency>
