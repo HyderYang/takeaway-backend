@@ -2,21 +2,18 @@ package com.hyderyang.takeaway.mapper;
 
 import cn.hutool.core.lang.Snowflake;
 import cn.hutool.core.util.RandomUtil;
+import com.hyderyang.takeaway.TakeawayApplicationTests;
 import com.hyderyang.takeaway.entity.po.ProductCategoryPO;
-import org.junit.*;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.transaction.annotation.Transactional;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
 import javax.annotation.Resource;
 import java.util.Arrays;
 import java.util.List;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-@Transactional
-public class ProductCategoryMapperTest {
+public class ProductCategoryMapperTest extends TakeawayApplicationTests {
 
 	@Resource
 	private ProductCategoryMapper productCategoryMapper;
