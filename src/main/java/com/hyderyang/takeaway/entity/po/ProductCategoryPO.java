@@ -7,24 +7,24 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 /**
+ * 商品分类实体
  * @author Hyder
  * @version 1.0
- * @date 2020/2/7 下午5:40
+ * @date 2020/2/8 上午1:16
  */
 @Data
+@TableName("product_category")
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-@TableName(value = "seller_info")
-public class SellerInfoPO extends BasePO {
+public class ProductCategoryPO extends BasePO{
 
 	private static final Long serialVersionUID = 1L;
 
-	@TableId(value = "seller_id")
-	private Long sellerId;
+	@TableId(value = "category_id")
+	private Long categoryId;
 
-	private String username;
+	private String categoryName;
 
-	private String password;
+	private Integer categoryType;
 
-	private String openid;
 }

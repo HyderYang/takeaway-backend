@@ -4,12 +4,4 @@
 
 <mapper namespace="com.hyderyang.takeaway.mapper.SellerInfoMapper">
 
-	<select id="get" parameterType="long" resultType="com.hyderyang.takeaway.entity.po.SellerInfoPO">
-		select * from seller_info where seller_id = #{id}
-	</select>
-
-	<insert id="save" parameterType="com.hyderyang.takeaway.entity.po.SellerInfoPO">
-		insert into seller_info(username, password, openid)
-		values (#{username}, #{password}, #{openid})
-	</insert>
 </mapper>
