@@ -45,7 +45,7 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
 	}
 
 	@Override
-	public ProductCategoryPO getProductCategoryByCateId(Integer cateId) {
-		return this.productCategoryMapper.getByCateType(cateId);
+	public List<ProductCategoryPO> getProductCategoryByCateId(List<Integer> types) {
+		return this.productCategoryMapper.getByCateType(types);
 	}
 }

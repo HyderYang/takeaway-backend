@@ -17,12 +17,14 @@ import lombok.experimental.Accessors;
 @Data
 public class ProductInfoPO extends BasePO {
 
+	private static final Long serialVersionUID = 1L;
+
 	@TableId("product_id")
 	private Long productId;
 
 	private String productName;
 
-	private Integer productPrice;
+	private Double productPrice;
 
 	private Integer productStock;
 

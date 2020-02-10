@@ -40,6 +40,11 @@ spring:
           config:
             multi-statement-allow: true
       db-type: mysql
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    locale: zh_CN
+    time-zone: GMT+8
+
 
 mybatis-plus:
   global-config:

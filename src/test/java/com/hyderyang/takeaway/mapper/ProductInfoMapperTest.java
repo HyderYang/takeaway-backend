@@ -32,7 +32,7 @@ public class ProductInfoMapperTest extends TakeawayApplicationTests {
 				.setProductName("粥")
 				.setProductDescription("好喝")
 				.setProductIcon("http://img.rungo.net")
-				.setProductPrice(300)
+				.setProductPrice(300D)
 				.setProductStock(20)
 				.setCategoryType(1)
 				.setProductStatus(ProductStatusEnum.UP.getCode());
@@ -53,7 +53,7 @@ public class ProductInfoMapperTest extends TakeawayApplicationTests {
 				.setProductName("汤")
 				.setProductDescription("好喝")
 				.setProductIcon("http://img.rungo.net")
-				.setProductPrice(300)
+				.setProductPrice(300D)
 				.setProductStock(20)
 				.setCategoryType(1)
 				.setProductStatus(ProductStatusEnum.UP.getCode());

@@ -45,8 +45,10 @@ public interface ProductCategoryService {
 
 	/**
 	 * 根据商品分类类型ID获取商品分类信息
-	 * @param cateId    类型ID
+	 * @param types    类型ID
 	 * @return          商品分类信息
 	 */
-	ProductCategoryPO getProductCategoryByCateId(Integer cateId);
+	List<ProductCategoryPO> getProductCategoryByCateId(List<Integer> types);
+
+
 }

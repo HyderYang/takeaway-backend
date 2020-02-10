@@ -78,8 +78,8 @@ public class ProductCategoryMapperTest extends TakeawayApplicationTests {
 
 	@Test
 	public void listByCateTypeTest() {
-		ProductCategoryPO byCateType = this.productCategoryMapper.getByCateType(this.cateId1);
-		Assert.assertNotEquals(null, byCateType);
+		List<ProductCategoryPO> list = this.productCategoryMapper.getByCateType(Arrays.asList(1, 2));
+		Assert.assertEquals(2, list.size());
 	}
 
 	@Test

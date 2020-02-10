@@ -5,7 +5,10 @@
 <mapper namespace="com.hyderyang.takeaway.mapper.ProductCategoryMapper">
 
 	<select id="getByCateType" resultType="com.hyderyang.takeaway.entity.po.ProductCategoryPO">
-		select * from product_category where category_type = #{categoryType}
+		select * from product_category where category_type in
+		<foreach collection="list" open="(" separator="," close=")" item="index">
+			#{index}
+		</foreach>
 	</select>
 
 </mapper>

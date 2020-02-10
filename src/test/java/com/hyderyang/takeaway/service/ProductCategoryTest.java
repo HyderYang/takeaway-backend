@@ -89,7 +89,7 @@ public class ProductCategoryTest extends TakeawayApplicationTests {
 
 	@Test
 	public void getProductCategoryByCateId() {
-		ProductCategoryPO productCategoryPO = this.ProductCategory.getProductCategoryByCateId(this.cateId1);
-		Assert.assertNotEquals(null, productCategoryPO);
+		List<ProductCategoryPO> list = this.ProductCategory.getProductCategoryByCateId(Arrays.asList(1, 2));
+		Assert.assertEquals(2, list.size());
 	}
 }
