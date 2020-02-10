@@ -18,6 +18,7 @@ public class ProductInfoVO extends BaseVO {
 
 	@JsonProperty("id")
 	private Long productId;
+//	@JsonSerialize(using= ToStringSerializer.class)
 
 	@JsonProperty("name")
 	private String productName;
